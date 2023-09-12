@@ -1,7 +1,25 @@
 <html>
   <body>
     <form>
-      
+<label for="expense-time">Choose a time for your expense:</label>
+
+<input
+  type="datetime-local"
+  id="expense-time"
+  name="expense-time"
+required
+/>
+<label for="description">Expense description:</label>
+<input type="text" id="description" required>
+
+<label for="expense-type-select">Choose a type of expense:</label>
+
+<select name="types" id="expense-type-select">
+  <option value="">--Please choose an option--</option>
+<option value="general">General</option> <option value="movies">Movies</option> <option value="groceries">Groceries</option> <option value="dining">Dining</option> <option value="rent">Rent</option>
+</select>
+      <label for="expense-amount">Expense Amount</label>
+      <input type="number" id="expense-amount" name="expense-amount" min="0" step="0.01" required>
     </form>
   </body>
 </html>
